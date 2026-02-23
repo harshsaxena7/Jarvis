@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tony Stark Interface</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #fff;
+            overflow: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        video {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform: scaleX(-1); /* Mirror effect */
+            object-fit: cover;
+            opacity: 0.5; /* Slight transparency to look cool */
+        }
+        canvas {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform: scaleX(-1); /* Mirror match video */
+        }
+        #status {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 100;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #00ffcc;
+            color: #00ffcc;
+            box-shadow: 0 0 10px #00ffcc;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <video id="input_video" autoplay playsinline></video>
+        <canvas id="output_canvas"></canvas>
+        <div id="status">Initializing JARVIS...</div>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>

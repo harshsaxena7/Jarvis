@@ -1,0 +1,24 @@
+{
+  "name": "jarvis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^40.0.0"
+  },
+  "dependencies": {
+    "@langchain/google-genai": "^2.1.13",
+    "@mediapipe/camera_utils": "^0.3.1675466862",
+    "@mediapipe/drawing_utils": "^0.3.1675466124",
+    "@mediapipe/hands": "^0.4.1675469240",
+    "dotenv": "^17.2.3",
+    "langchain": "^1.2.13"
+  }
+}
